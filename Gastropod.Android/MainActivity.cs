@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Xamarin.Forms;
 
 namespace Gastropod.Droid
 {
@@ -19,6 +20,7 @@ namespace Gastropod.Droid
 
             base.OnCreate(bundle);
 
+            Forms.SetFlags("Shell_Experimental");
             global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App());
         }
